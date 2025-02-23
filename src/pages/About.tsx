@@ -1,7 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const About = ({ name }) => {
+interface AboutProps {
+  name: string;
+}
+
+const About: React.FC<AboutProps> = ({ name }) => {
   return (
     <div>
       <h1>About Me</h1>

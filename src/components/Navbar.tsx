@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import ThemeContext from "../context/ThemeContext";
+import { ThemeContext } from "../context/ThemeContext";
 
-const Navbar = () => {
-  const { toggleTheme } = useContext(ThemeContext);
+const Navbar: React.FC = () => {
+  const themeContext = useContext(ThemeContext);
+  const toggleTheme = themeContext ? themeContext.toggleTheme : () => {};
 
   return (
     <nav>

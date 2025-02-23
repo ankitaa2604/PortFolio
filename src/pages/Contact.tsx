@@ -1,19 +1,21 @@
 import React, { useState, useRef, useEffect } from "react";
 
-const Contact = () => {
+const Contact: React.FC = () => {
   const [formData, setFormData] = useState({ name: "", email: "" });
-  const inputRef = useRef();
+  const inputRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
-    inputRef.current.focus();
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
   }, []);
 
-  const handleChange = (event) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     alert(`Thank you ${formData.name}, we will contact you at ${formData.email}`);
   };
