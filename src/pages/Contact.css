@@ -1,0 +1,14 @@
+.contact {
+    text-align: center;
+    padding: 3rem;
+  }
+  
+  .contact a {
+    color: #facc15;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  

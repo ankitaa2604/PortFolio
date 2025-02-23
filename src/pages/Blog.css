@@ -1,0 +1,13 @@
+.blog {
+    text-align: center;
+    padding: 3rem;
+  }
+  
+  .blog-card {
+    background: #1e1e1e;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    border-radius: 8px;
+  }
+  

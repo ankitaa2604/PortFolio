@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
+import "./Layout.css";
 
 const Layout: React.FC = () => {
   const { theme, toggleTheme } = useTheme();

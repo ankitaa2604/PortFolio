@@ -1,0 +1,19 @@
+.projects {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .project-card {
+    background: #1e1e1e;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 8px;
+    max-width: 400px;
+  }
+  
